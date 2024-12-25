@@ -10,7 +10,7 @@ cap = cv2.VideoCapture(video_path)
 # 取得影片的fps（每秒幀數）
 fps = cap.get(cv2.CAP_PROP_FPS)
 
-# 定義時間區段及對應的處理方法
+# 定義時間區段及對應的處理方法(開始,結束,方法)
 segments = [
     (0, 7, 'original'),
     (8, 20, 'sift'),
